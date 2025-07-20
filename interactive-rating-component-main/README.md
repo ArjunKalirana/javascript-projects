@@ -2,7 +2,7 @@
 
 This project is a simple, responsive, and accessible interactive rating component built using **HTML**, **CSS**, and **JavaScript**. It allows users to select a rating (1 to 5), submit their feedback, and view a thank-you message displaying their selected rating.
 
-![Demo Screenshot](./design/active-states.jpg)
+![Demo Screenshot](./interactive-rating-component-main/design/Screenshot 2025-07-20 140544.png)
 
 ---
 
