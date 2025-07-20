@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    background-color: hsl(213, 19%, 18%);
+    width: 25vw;
+    height: auto;
+    border-radius:  0.75rem;
+    padding: 2rem 2.5rem;
+}
+.content{
+    color: white;
+}
+.star{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:hsl(214, 13%, 24%) ;
+    color:hsl(25, 97%, 53%);
+    margin-bottom: 2rem;
+}
+.content p{
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+}
+
+.rating p{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:hsl(214, 13%, 24%) ;
+    color: hsl(217, 12%, 63%);
+}
+
+button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 1rem;
+    font-weight: 550;
+    border: none;
+}
+
+.thank{
+    text-align: center;
+}
+.image{
+    
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.image img{
+    width: 12vw;
+}
+
+.display{
+    margin: 1rem auto;
+    width: 15vw;
+    text-align: center;
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color:hsl(214, 13%, 24%) ;
+    color:hsl(25, 97%, 53%);
+}
+
+.hidden{
+    display: none;
+}
+
+.rating p:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    color: black;
+}
+
+.rating p.selected{
+    background-color: white;
+    color: black;
+}
+
+@media screen and ( max-width:27.5rem) {
+    .container{
+        width: 70%;
+    }
+
+    .image img{
+        width: max-content;
+    }
+
+    .display{
+        width: 100%;
+    }
+
+}
