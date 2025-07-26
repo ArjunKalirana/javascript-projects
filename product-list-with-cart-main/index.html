@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Product list with cart</title>
+
+  
+</head>
+
+  <div class="container">
+    <div class="gridd">
+      <h1 class="page-title">Desserts</h1>
+
+    <div class="items" id="items-container">
+      <!-- items will come here -->
+      
+      </div>
+    </div>
+      <div class="cart">
+  <div class="numitem">Your Cart (<span id="cart-count">0</span>)</div>
+
+  <!-- When nothing is in the cart -->
+  <div class="when-not" id="empty-cart">
+    <div class="cake">
+      <img src="./assets/images/illustration-empty-cart.svg" alt="">
+    </div>
+    <div class="addeditem">Your added items will appear here</div>
+  </div>
+
+  <!-- When cart has items -->
+  <div class="when-ordered" id="cart-items">
+    <div class="orders" id="cart-list"></div>
+
+    <div class="orders-total">
+      Orders Total:
+      <div class="totalprice" id="total-price">$0.00</div>
+    </div>
+
+    <div class="carbon">
+      <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+      <p>This is carbon-neutral delivery</p>
+    </div>
+
+    <button class="confirm" onclick="confirmOrder()">Confirm Order</button>
+  </div>
+</div>
+
+    </div>
+    <!-- Order Confirmation Modal -->
+<div class="modal" id="order-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <img src="./assets/images/icon-order-confirmed.svg" width="48" />
+      <h2 class="modal-title">Order Confirmed</h2>
+      <p class="modal-subtitle">We hope you enjoy your food!</p>
+    </div>
+
+    <div class="modal-items" id="modal-items-list"></div>
+
+    <div class="orders-total">
+      <span>Order Total</span>
+      <span class="totalprice" id="modal-total-price">$0.00</span>
+    </div>
+
+    <button class="confirm" onclick="startNewOrder()">Start New Order</button>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
