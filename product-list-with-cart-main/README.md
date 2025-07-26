@@ -10,7 +10,7 @@ This is a responsive dessert shopping cart web application. It allows users to:
 
 ## 💻 Live Demo
 
-> [Upload to GitHub Pages or Netlify to share a link here]
+>🌐 [View on GitHub Pages](https://arjunkalirana.github.io/javascript-projects/)
 
 ---
 
